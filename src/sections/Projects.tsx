@@ -6,6 +6,7 @@ import CheckIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg"
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 
 
@@ -54,7 +55,8 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="pb-16 lg:py-24">
+    <RevealOnScroll>
+      <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader eyebrow="Real-World Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences"/>
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
@@ -125,6 +127,7 @@ export const ProjectsSection = () => {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </RevealOnScroll>
   );
 };

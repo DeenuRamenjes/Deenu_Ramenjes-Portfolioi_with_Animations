@@ -5,10 +5,12 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import HeroOrbit from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const HeroSection = () => {
   return (
-    <section id="home">
+    <RevealOnScroll>
+      <section id="home">
       <div className="py-24 md:py-48 lg:py-60 relative z-0 overflow-hidden">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] ">
         <div
@@ -96,5 +98,6 @@ export const HeroSection = () => {
       </div>
     </div>
     </section>
+    </RevealOnScroll>
   );
 };
