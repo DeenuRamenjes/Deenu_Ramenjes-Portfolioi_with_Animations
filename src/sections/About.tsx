@@ -8,13 +8,18 @@ import ReactIcon from "@/assets/icons/react.svg";
 import HtmlIcon from "@/assets/icons/html5.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import GithubIcon from "@/assets/icons/github.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
 import mapImage from "@/assets/images/map.png";
 import smileImage from "@/assets/images/memoji-smile.png";
 import Cardheader from "@/components/Cardheader";
 import ToolBoxItems from "@/components/ToolBoxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import ReactNative from "@/assets/icons/react.svg";
+import MongoDB from "@/assets/icons/mongodb.svg";
+import Nodejs from "@/assets/icons/node.svg";
+import Tailwind from "@/assets/icons/tailwind.svg";
+import Angular from "@/assets/icons/angular.svg";
+import Express from "@/assets/icons/express.svg";
 
 const toolboxItems = [
   { title: "JavaScript", iconType: JavascriptIcon },
@@ -22,6 +27,12 @@ const toolboxItems = [
   { title: "CSS", iconType: CssIcon },
   { title: "React", iconType: ReactIcon },
   { title: "Github", iconType: GithubIcon },
+  { title: "Angular", iconType: Angular },
+  { title: "MongoDB", iconType: MongoDB },
+  { title: "Tailwind", iconType: Tailwind },
+  { title: "Node.js", iconType: Nodejs },
+  { title: "Express", iconType: Express },
+  { title: "React Native", iconType: ReactNative },
 ];
 
 const hobbies = [
