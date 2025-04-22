@@ -11,6 +11,9 @@ const nextConfig = {
         test: /\.svg$/i,
         resourceQuery: /url/,
       },
+      module.exports = {
+        output: 'export',
+      },
       {
         test: /\.svg$/i,
         issuer: fileLoaderRule.issuer,
