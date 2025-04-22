@@ -9,46 +9,6 @@ import Card from "@/components/Card";
 
 
 
-// const portfolioProjects = [
-//   {
-//     company: "E-Commerce Website",
-//     year: "2025",
-//     title: "Dark Saas Landing Page",
-//     results: [
-//       { title: "Enhanced user experience by 40%" },
-//       { title: "Improved site speed by 50%" },
-//       { title: "Increased mobile traffic by 35%" },
-//     ],
-//     link: "https://youtu.be/4k7IdSLxh6w",
-//     image: darkSaasLandingPage,
-//   },
-//   {
-//     company: "Innovative Co",
-//     year: "2021",
-//     title: "Light Saas Landing Page",
-//     results: [
-//       { title: "Boosted sales by 20%" },
-//       { title: "Expanded customer reach by 35%" },
-//       { title: "Increased brand awareness by 15%" },
-//     ],
-//     link: "https://youtu.be/7hi5zwO75yc",
-//     image: lightSaasLandingPage,
-//   },
-//   {
-//     company: "Quantum Dynamics",
-//     year: "2023",
-//     title: "AI Startup Landing Page",
-//     results: [
-//       { title: "Enhanced user experience by 40%" },
-//       { title: "Improved site speed by 50%" },
-//       { title: "Increased mobile traffic by 35%" },
-//     ],
-//     link: "https://youtu.be/Z7I5uSRHMHg",
-//     image: aiStartupLandingPage,
-//   },
-// ];
-
-
 const portfolioProjects = [
   {
     company: "E-Commerce Website",
@@ -59,8 +19,8 @@ const portfolioProjects = [
       { title: "Developed dynamic product listings and cart management" },
       { title: "Added JWT-based authentication for user security" },
     ],
-    link: "URL_TO_LIVE_DEMO",
-    github: "URL_TO_GITHUB",
+    link: "https://e-commerce-5h1r.onrender.com",
+    github: "https://github.com/DeenuRamenjes/Full_Stack_E-Commerce_Website_using_React_JS",
     image: darkSaasLandingPage,
   },
   {
@@ -72,8 +32,8 @@ const portfolioProjects = [
       { title: "Enabled real-time chat functionality using Socket.io" },
       { title: "Implemented user authentication with Clerk" },
     ],
-    link: "URL_TO_LIVE_DEMO",
-    github: "URL_TO_GITHUB",
+    link: "https://spotify-chat-jqzp.onrender.com",
+    github: "https://github.com/DeenuRamenjes/Full_Stack_Spotify-clone_with_chat_using_React_TypeScript_and_Tailwind_css",
     image: lightSaasLandingPage,
   },
   {
@@ -86,7 +46,7 @@ const portfolioProjects = [
       { title: "Added push notifications for increased engagement" },
     ],
     link: "URL_TO_LIVE_DEMO",
-    github: "URL_TO_GITHUB",
+    github: "https://github.com/DeenuRamenjes/FlashBack-Social_Media_Mobile_App_using_React-Native",
     image: aiStartupLandingPage,
   },
 ];
@@ -125,16 +85,40 @@ export const ProjectsSection = () => {
                   </li>
                 ))}
               </ul>
-              <a href={project.link}>
-                <button className="bg-white hover:bg-white/90 hover:-translate-y-1 transition-transform text-gray-950 h-12 w-full rounded-xl font-semibold
-                inline-flex items-center justify-center gap-2 mt-8 md:w-auto md:px-6">
-                  <span>Visit Live Site</span>
-                  <ArrowUpRight className="size-4" />
+              <div className="flex items-center justify-center gap-4 w-full mt-4 md:justify-start">
+                {project.company !== "Flashback App" ? (
+                  <a 
+                  href={project.link} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full md:w-auto"
+                >
+                  <button className="bg-white hover:bg-white/90 hover:-translate-y-1 transition-transform
+                   text-gray-950 h-12 w-full rounded-xl font-semibold
+                    inline-flex items-center justify-center gap-2 md:px-6">
+                    <span>Live Demo</span>
+                    <ArrowUpRight className="size-4" />
                   </button>
-              </a>
+                </a>
+                ) : (
+                  <div></div>
+                )}
+                <a 
+                  href={project.github} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full md:w-auto"
+                >
+                  <button className="bg-white hover:bg-white/90 hover:-translate-y-1 transition-transform text-gray-950 h-12 w-full rounded-xl font-semibold
+                    inline-flex items-center justify-center gap-2 md:px-6">
+                    <span>Github Link</span>
+                    <ArrowUpRight className="size-4" />
+                  </button>
+                </a>
+              </div>
                   </div>
                     <div>
-                <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:pb-4 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
+                <Image src={project.image} alt={project.title} className="mt-6 -mb-4 md:pb-4 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
                     </div>
                   </div>
             </Card>
