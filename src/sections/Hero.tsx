@@ -61,7 +61,7 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center z-10">
           <Image
             src={memojiImage}
-            className="size-[100px]"
+            className="size-[150px] border border-gray-700 rounded-full mb-2 "
             alt="Person with laptop"
           />
           <div className="bg-gray-950 hover:bg-gray-900 border border-grey-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
