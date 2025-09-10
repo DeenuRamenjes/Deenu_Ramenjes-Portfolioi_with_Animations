@@ -58,11 +58,11 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
       <div className="container z-0">
-        <div className="flex flex-col items-center z-10">
+        <div className="flex flex-col items-center z-10" style={{marginTop: '-60px'}}>
           <Image
             src={memojiImage}
             className="size-[150px] border border-gray-700 rounded-full mb-2 "
-            alt="Person with laptop"
+            alt="Deenu Ramenjes M S"
           />
           <div className="bg-gray-950 hover:bg-gray-900 border border-grey-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">

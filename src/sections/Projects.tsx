@@ -57,7 +57,7 @@ export const ProjectsSection = () => {
   return (
     <RevealOnScroll>
       <section id="projects" className="pb-16 lg:py-24">
-      <div className="container">
+      <div className="container" style={{marginTop: '20px'}}>
         <SectionHeader eyebrow="Real-World Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences"/>
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
           {portfolioProjects.map((project,projectIndex) => (
@@ -80,8 +80,8 @@ export const ProjectsSection = () => {
               <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">{project.title}</h3>
               <hr className="border-t-2 border-white/5 mt-4"/>
               <ul className="flex flex-col gap-4 mt-4 md:gap-4 md:mt-6">
-                {project.results.map((result) => (
-                  <li className="flex gap-2 text-sm text-white/50 md:text-base">
+                {project.results.map((result, resultIndex) => (
+                  <li key={`${project.title}-result-${resultIndex}`} className="flex gap-2 text-sm text-white/50 md:text-base">
                     <CheckIcon className="size-5 md:size-6" />
                     <span>{result.title}</span>
                   </li>
