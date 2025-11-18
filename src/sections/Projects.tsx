@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import darkSaasLandingPage from "@/assets/images/quantzi.png";
+import lightSaasLandingPage from "@/assets/images/quintorq.png";
+import aiStartupLandingPage from "@/assets/images/Infant_Jesus.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg"
@@ -12,42 +12,37 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 const portfolioProjects = [
   {
-    company: "E-Commerce Website",
+    company: "Quantzi",
     year: "2025",
-    title: "Full-Stack E-Commerce Website using ReactJS & Stripe",
+    title: "Quantzi Website home page with animations",
     results: [
-      { title: "Implemented secure transaction processing with Stripe" },
-      { title: "Developed dynamic product listings and cart management" },
-      { title: "Added JWT-based authentication for user security" },
+      { title: "Delivered a modern UI with clean layout, ensuring cross-device compatibility." },
+      { title: "Integrated animations and hover effects for improved engagement." },
+      { title: "Optimized page performance and loading speed for animation-heavy sections." },
     ],
-    link: "https://e-commerce-5h1r.onrender.com",
-    github: "https://github.com/DeenuRamenjes/Full_Stack_E-Commerce_Website_using_React_JS",
+    link: "https://quantzi.co/",
     image: darkSaasLandingPage,
   },
   {
-    company: "Spotify Clone",
+    company: "Quintorq",
     year: "2025",
-    title: "Spotify Clone – Real-Time Chat & Live Listening",
+    title: "Quintorq Website",
     results: [
-      { title: "Boosted engagement by integrating live listening features" },
-      { title: "Enabled real-time chat functionality using Socket.io" },
-      { title: "Implemented user authentication with Clerk" },
+      { title: "Took an existing template and redesigned the UI for a cleaner, more professional look." },
+      { title: "Updated all content sections to reflect Quintorq’s services and identity." }
     ],
-    link: "https://spotify-chat-jqzp.onrender.com",
-    github: "https://github.com/DeenuRamenjes/Full_Stack_Spotify-clone_with_chat_using_React_TypeScript_and_Tailwind_css",
+    link: "https://quintorq.com/",
     image: lightSaasLandingPage,
   },
   {
-    company: "Flashback App",
+    company: "Infant Jesus",
     year: "2025",
-    title: "FlashBack – A Social Media App using React Native",
+    title: "Infant Jesus Ads and Blogs",
     results: [
-      { title: "Built real-time post sharing with Convex database" },
-      { title: "Implemented secure user authentication via Clerk" },
-      { title: "Added push notifications for increased engagement" },
+      { title: "Developed a dedicated Ads & Blogs section for dynamic content publishing." },
+      { title: "Implemented an easy-to-use CMS structure using QAdmin for quick blog updates." },
     ],
-    link: "URL_TO_LIVE_DEMO",
-    github: "https://github.com/DeenuRamenjes/FlashBack-Social_Media_Mobile_App_using_React-Native",
+    link: "https://ijce.ac.in/",
     image: aiStartupLandingPage,
   },
 ];
@@ -88,7 +83,6 @@ export const ProjectsSection = () => {
                 ))}
               </ul>
               <div className="flex items-center justify-center gap-4 w-full mt-4 md:justify-start">
-                {project.company !== "Flashback App" ? (
                   <a 
                   href={project.link} 
                   target="_blank"
@@ -98,29 +92,14 @@ export const ProjectsSection = () => {
                   <button className="bg-white hover:bg-white/90 hover:-translate-y-1 transition-transform
                    text-gray-950 h-12 w-full rounded-xl font-semibold
                     inline-flex items-center justify-center gap-2 md:px-6">
-                    <span>Live Demo</span>
-                    <ArrowUpRight className="size-4" />
-                  </button>
-                </a>
-                ) : (
-                  <div></div>
-                )}
-                <a 
-                  href={project.github} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full md:w-auto"
-                >
-                  <button className="bg-white hover:bg-white/90 hover:-translate-y-1 transition-transform text-gray-950 h-12 w-full rounded-xl font-semibold
-                    inline-flex items-center justify-center gap-2 md:px-6">
-                    <span>Github Link</span>
+                    <span>Live Link</span>
                     <ArrowUpRight className="size-4" />
                   </button>
                 </a>
               </div>
                   </div>
                     <div>
-                <Image src={project.image} alt={project.title} className="mt-6 -mb-4 md:pb-4 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
+                <Image src={project.image} alt={project.title} className="mt-6 -mb-4 md:pb-4 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-3xl" />
                     </div>
                   </div>
             </Card>

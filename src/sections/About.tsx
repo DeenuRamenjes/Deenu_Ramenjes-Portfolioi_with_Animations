@@ -147,7 +147,7 @@ export const AboutSection = () => {
                   src={mapImage}
                   alt="Map"
                   className="h-full w-full object-cover object-left-top"
-                  style={{borderRadius: '0.5rem'}}
+                  style={{transform: '0.5rem'}}
                 />
                 <div
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline-2

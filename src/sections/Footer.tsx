@@ -5,7 +5,7 @@ export const Footer = () => {
   const footerLinks = [
     {
       title: "LinkedIn",
-      href: "https://www.linkedin.com/in/d%E1%B4%87%E1%B4%87%C9%B4%E1%B4%9C-r%E1%B4%80%E1%B4%8D%E1%B4%87%C9%B4%E1%B4%8A%E1%B4%87s-m-s-b49902336/"
+      href: "https://www.linkedin.com/in/deenu-ramenjes-ms-b49902336/"
     },
     {
       title: "GitHub",
@@ -13,7 +13,7 @@ export const Footer = () => {
     },
     {
       title: "Instagram",
-      href: "#"
+      href: "https://www.instagram.com/_mr_zoldyck_?igsh=MW45ajE0Z2tlczBsdQ=="
     }
   ];
 

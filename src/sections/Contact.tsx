@@ -26,7 +26,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <button className="text-white mb-8 hover:-translate-y-1 transition-transform bg-gray-900 inline-flex items-center  hover:border-white
-              px-6 h-12 rounded-xl gap-2 mt-8 w-max border border-gray-950 hover:bg-white hover:text-gray-900">
+              px-6 h-12 rounded-xl gap-2 mt-8 w-max border border-gray-950 hover:bg-white hover:text-gray-900" onClick={() => window.open('https://drive.usercontent.google.com/u/3/uc?id=12AKlwDcJyuvR4NGw5CX-KfQZ_glKruWb&export=download', '_self')}>
                 <span className="font-semibold">Download</span>
                 <ArrowUpRightIcon className="size-4" />
               </button>
