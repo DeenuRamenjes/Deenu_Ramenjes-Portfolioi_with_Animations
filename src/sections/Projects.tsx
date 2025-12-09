@@ -7,6 +7,7 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg"
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import DRSMusic from "@/assets/images/DRS_Music.png";
 
 
 
@@ -45,6 +46,19 @@ const portfolioProjects = [
     link: "https://ijce.ac.in/",
     image: aiStartupLandingPage,
   },
+  {
+  company: "Independent Project",
+  year: "2025",
+  title: "DRSMusic - Music Streaming Web App",
+  results: [
+    { title: "Built a responsive music streaming platform with user-friendly UI and customizable theme settings." },
+    { title: "Implemented admin module to upload and manage songs and albums." },
+    { title: "Added authentication (Clerk) and backend with Node.js, Express.js, and MongoDB." },
+    { title: "Developed features like real-time listening status and basic messaging between users." },
+  ],
+  link: "https://drs-music-player.onrender.com",
+  image: DRSMusic,
+}
 ];
 
 
@@ -58,7 +72,7 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project,projectIndex) => (
             <Card
               key={project.title}
-              className=" md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 pb-0 sticky" style={{
+              className=" md:pt-12 md:px-10 lg:pt-16 lg:px-20 px-8 pt-8 pb-0 sticky hover:-translate-y-0" style={{
                 top:`calc(64px + ${projectIndex * 40}px)`
               }}
             >
